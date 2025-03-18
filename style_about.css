@@ -1,0 +1,309 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Images */
+img {
+    object-fit: cover;
+}
+
+/* Heading */
+h2 {
+    font-weight: 400;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+/* Logo inside Navigation */
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav .logo img {
+    width: 30px;
+    height: 30px;
+}
+
+nav .logo a {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Navigation links */
+nav .nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+nav .nav-links a {
+    font-size: 14px;
+    color: #606060;
+    transition: all 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #000;
+}
+
+nav button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 14px;
+    height: 32px;
+    width: 122px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav button:hover,
+.hero .left-section .top .buttons button.doc:hover,
+.contact .items .item button:hover{
+    color: #000;
+    background: #fff;
+    border-color: #dedede;
+}
+
+nav button i{
+    font-size: 20px;
+}
+
+/* Hero section */
+.hero {
+    margin-top: 80px;
+    height: calc(100vh + 500px);  /* Adjusted to fit the hero section properly */
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Hero image */
+.hero > img {
+    max-width: 520px;
+    width: 44%;
+    border-radius: 26px;
+}
+
+/* Hero left section */
+.hero .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.hero .left-section .top h2 {
+    font-size: 44px;
+    margin-bottom: 24px;
+}
+
+.hero .left-section .top p {
+    color: #606060;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+/* Buttons inside Hero */
+.hero .left-section .top .buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.hero .left-section .top .buttons button {
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hero .left-section .top .buttons button.doc {
+    background: #000;
+    color: #fff;
+}
+
+.hero .left-section .top .buttons button.git:hover {
+    background: #000;
+    color: #fff;
+    border-color: transparent;
+}
+
+.hero .left-section .bottom p {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+/* Social icons */
+.hero .left-section .bottom .icons {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Scrolling bar */
+.scrolling-bar {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 20px;  /* Adjusted margin to ensure no overlap */
+    margin-bottom: 20px;  /* Reduced space below */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scrolling-bar p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Journey Section */
+.journey {
+    background-color: #f4f4f4;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 2px;  /* Adjusted margin to prevent overlap */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.journey h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    font-weight: 600;
+    color: #333;
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Optional: adjust top margin to add space from the top */
+}
+
+
+.journey p {
+    font-size: 20px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.journey-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.awards{
+    background-color: #f4f4f4;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 2px;  /* Adjusted margin to prevent overlap */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.awards h2  {
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    font-weight: 600;
+    color: #333;
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Optional: adjust top margin to add space from the top */
+}
+.awards p {
+    font-size: 20px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+footer{
+    background: #1f1f1f;
+    border-radius: 24px 24px 0 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p,
+footer a{
+    font-size: 13px;
+    color: #606060;
+    transition: all 0.3s ease;
+}
+
+footer a:hover{
+    color: #fff;
+}
